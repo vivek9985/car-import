@@ -1,4 +1,5 @@
 "use client";
+import { Car } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
 
@@ -8,20 +9,7 @@ export default function Header() {
     <header className="bg-gradient-to-r from-blue-700 to-blue-600 text-white shadow-lg">
       <div className="container mx-auto px-4 py-4 flex justify-between items-center relative">
         <div className="flex items-center space-x-2">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="h-8 w-8"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M19 9l-7 7-7-7"
-            />
-          </svg>
+        <Car className="h-8 w-8" />
           <h1 className="text-2xl font-bold">Auto Import Srbija</h1>
         </div>
         <nav className="hidden lg:flex space-x-8">
@@ -62,7 +50,7 @@ export default function Header() {
             Kontakt
           </Link>
         </nav>
-        <div className="lg:hidden">
+        <div className="lg:hidden flex items-center justify-center">
           <button
             className="text-white focus:outline-none cursor-pointer"
             onClick={() => setActive(!active)}
@@ -87,7 +75,7 @@ export default function Header() {
 
           </button>
         </div>
-        <div className={`bg-blue-600 w-[200px] p-7 rounded-xl absolute top-[65px] z-50 duration-300 ${active ? "right-2 opacity-100" : "right-[-50%] opacity-0"} `} onBlur={() => setActive(true)}>
+        <div className={`bg-blue-600 w-[200px] p-7 rounded-xl absolute top-[65px] z-50 duration-300 ${active ? "right-2 opacity-100" : "right-[-50%] opacity-0"} `} onClick={() => setActive(false)}>
           <nav className="flex flex-col gap-4">
             <Link
               href="/"

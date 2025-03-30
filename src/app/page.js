@@ -22,8 +22,7 @@ export default function Home() {
                 Uvoz automobila iz Evrope po vašoj meri
               </h1>
               <p className="text-xl md:text-2xl mb-8 text-blue-100">
-                Profesionalna usluga uvoza kvalitetnih polovnih automobila iz
-                Nemačke, Austrije, Švajcarske i drugih evropskih zemalja.
+              Profesionalna usluga uvoza kvalitetnih rabljenih automobila iz Nizozemske, Njemačke, Belgije i drugih europskih zemalja
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link
